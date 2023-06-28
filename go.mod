@@ -6,6 +6,7 @@ require (
 	github.com/golang-migrate/migrate/v4 v4.16.2
 	github.com/jackc/pgx v3.6.2+incompatible
 	github.com/lib/pq v1.10.9
+	github.com/satori/go.uuid v1.2.0
 	github.com/spf13/viper v1.16.0
 	go.uber.org/zap v1.21.0
 )
