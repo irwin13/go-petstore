@@ -214,7 +214,7 @@ func (d *PetDaoPgx) Delete(request entity.DeletePet) (int64, error) {
 	var sql bytes.Buffer
 	sqlParameters := make([]interface{}, 0)
 
-	sql.WriteString("DELETE ")
+	sql.WriteString("DELETE FROM")
 	sql.WriteString(d.tableName())
 	sql.WriteString("WHERE id = $1 ")
 	sqlParameters = append(sqlParameters, request.ID)
